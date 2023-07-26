@@ -1,0 +1,190 @@
+/* DEVON HORNSBY 7/25/2023 FINAL PROJECT */
+/* COLOR VARIABLES */
+:root {
+    --color1: #12425f;
+    --color2: #516e85;
+    --color3: #94a7af;
+    --color4: #d9e4e1;
+    --color5: #f3f3f3;
+    --shadow: 0 1px 5px rgba(43, 43, 43, 0.8);
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background-image: url(images/springfield.jpg);
+    background-size: cover;
+}
+/* NAV */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav a {
+    background: var(--color2);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--color4);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+.main-nav a:hover{
+    background: var(--color1);
+}
+/* START OF MAIN BODY */
+header{
+    text-align: center;
+    background-color:var(--color3) ;
+    box-shadow: var(--shadow);
+    padding: 5px;
+    color: var(--color4);
+}
+.whoami h1{
+    text-align: center;
+    text-shadow: 3px 3px 3px var(--color3);
+}
+
+.flexbody h1{
+    text-align: center;
+    color: var(--color4);
+}
+.flexbody{
+    display: grid;
+    grid-template-areas: 
+    'body1 body1'
+    'body2 body3';
+}
+.fbody{
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    margin: 10px;
+    background-color: var(--color3);
+    border-style: solid;
+    border-color: #12425f;
+}
+.fbody p{
+    text-shadow: 1px 1px 2px var(--color2);
+}
+.fbody1{
+    grid-area: body1;
+}
+.fbody2{
+    grid-area: body2;
+}
+.fbody3{
+    grid-area: body3;
+}
+footer{
+    text-align: center;
+    background-color: var(--color5);
+    padding: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 25px;
+    font-size: large;
+}
+.form{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.form form{
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+    border-style: solid;
+    border-color: #12425f;
+}
+.form legend{
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--color5);
+}
+.contactbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.mycontact{
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+    border-style: solid;
+    border-color: #12425f;
+}
+.mycontact h2{
+    color: var(--color5);
+}
+.mycontact p{
+    text-shadow: 1px 1px 2px var(--color2);
+}
+.mycontact img{
+    float: right;
+}
+.aboutmebody{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.about{
+    background-color: var(--color3);
+    margin: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-style: solid;
+    border-color: #12425f;
+    text-align: center;
+}
+.about img{
+    box-shadow: var(--shadow);
+}
+
+.about p{
+    text-shadow: 1px 1px 2px var(--color2);
+}
+.table{
+    background-color: var(--color4);
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    color: var(--color1);
+    border: solid;
+    box-shadow: var(--shadow);
+}
+.table td{
+    padding: 10px;
+    background-color: #94a7af;
+    width: 300px;
+}
+.table .undecided{
+    background-color: rgb(215, 136, 136);
+}
+.table p{
+    background-color: var(--color3);
+    padding: 5px;
+}
+@media screen and (max-width:1150px)
+{
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .aboutmebody{
+        grid-template-columns: 1fr;
+    }
+    .flexbody{
+        grid-template-areas: 
+        'body1'
+        'body2'
+        'body3';
+    }
+    .contactbox{
+        grid-template-columns: 1fr;
+    }
+}
+
+
